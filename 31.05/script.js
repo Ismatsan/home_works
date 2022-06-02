@@ -21,7 +21,8 @@ alert(`Всего ${sum}`);
 console.log(`Всего ${sum}`);
 
 /** third task **/
-let number = (31 === true) ? number =3 : number = 5;
+const data = true;
+let number = data ? 3 : 5;
 
 
 /** forth task **/
