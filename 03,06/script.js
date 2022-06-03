@@ -17,3 +17,7 @@ alert(result1);
 console.log(result1);
 
 /** task 3 **/
+let arr1 = ['a', 'b', 'c'];
+arr1.push(1, 2, 3);
+
+console.log(arr1);
