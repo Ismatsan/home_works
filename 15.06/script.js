@@ -4,7 +4,7 @@
 let arr = []
 
 for (i = 0; i < 10; i++){
-    arr[i] ='x';
+    arr.push('x');
 }
 
 console.log(arr);
