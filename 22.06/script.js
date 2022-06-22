@@ -7,8 +7,8 @@ const result = numbers.reduce((sum, item)=>{
 }, 0)
 console.log(result);*/
 
-/** Описание **/
-/*
+
+/** Описание
 1) (( sum = 1; item = 2) =>{
     return 1 + 2;
 }, 3)
@@ -24,9 +24,18 @@ console.log(result);*/
 4)((sum = 31; item = 45) =>{
     return 31 + 45;
 }, 76)
-console.log(result) //76
-*/
+console.log(result)
+**/
 
 /** 1st task
  * Напишите функцию mul(n,m), которая принимает два аргумента и возвращает
  произведение этих аргументов. **/
+let n =prompt('введите значение n')
+let m =prompt('введите значение m')
+
+const mul = [n, m];
+
+const product = mul.reduce((prod, item) =>{
+    return prod * item;
+}, )
+document.write(product);
