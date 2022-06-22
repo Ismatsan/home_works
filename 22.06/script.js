@@ -39,3 +39,15 @@ const product = mul.reduce((prod, item) =>{
     return prod * item;
 }, )
 document.write(product);
+
+/** 2nd task
+ * Создайте функцию и с помощью цикла найдите факториал числа 7:
+ Название для функции можно дать любую.
+ Например при вызове функции factorial с параметром 7 в консоли должно
+ вывести следующее:
+ **/
+
+function factorial(u){
+return (u !== 1)? u * factorial(u - 1): 1;
+}
+console.log(factorial(7)); //5040
