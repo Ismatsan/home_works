@@ -1,3 +1,18 @@
+/** 1st task
+ * Напишите функцию, который будет выводить сообщение “Hello World” раз в секунду,
+ но всего 5 раз. После 5 итераций скрипт должен вывести сообщение “Done”,
+ после чего процесс завершится.
+ При решении данной задачи нельзя вызывать setTimeout.**/
+
+
+for (let i = 1; i <= 5; ++i  ){
+    const intervalId = setInterval(() => {
+        console.log('Hello World');
+    }, 1000);
+    console.log('Done');
+    clearInterval(intervalId);
+}
+
 
 /** 2nd task
  *  Составьте программу, которая принимает с клавиатуры числа,
@@ -17,5 +32,3 @@ while (number !== 999) {
 document.write(('Количество чисел - ') + amount );
 
 document.write((';Сумма = ') + sum);
-
-
