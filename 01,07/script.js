@@ -21,6 +21,7 @@ const test1 = () =>{
 
 }
 
+/** 2nd task */
 const info_btn1 = document.querySelector('#water');
 
 info_btn1.onmouseenter = showModal1;
