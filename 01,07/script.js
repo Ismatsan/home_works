@@ -3,13 +3,11 @@ const showModal = () => {
     return false;
 }
 
-const test = () =>{
-
 }
 
 const info_btn = document.querySelector('#nature');
 
-info_btn.onmouseenter = showModal;
+info_btn.onclik = showModal;
 
 
 const showModal1= () => {
@@ -17,14 +15,8 @@ const showModal1= () => {
     return false;
 }
 
-const test1 = () =>{
-
 }
 
-/** 2nd task */
 const info_btn1 = document.querySelector('#water');
 
-info_btn1.onmouseenter = showModal1;
-
-
-let arguments = ['']
+info_btn1.onklik = showModal1;
