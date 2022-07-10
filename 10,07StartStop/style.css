@@ -1,0 +1,29 @@
+.timer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.time {
+    font-weight: 700;
+    font-size: 100px;
+    background-color:blue;
+    color:white;
+}
+
+.start{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.stop {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 52px;
+}
