@@ -2,7 +2,7 @@
 function imagefun() {
     let Image_Id = document.getElementById('getImage');
     let user = (prompt('Как тебя зовут?'));
-    alert('Привет,' + user);
+    alert('Привет, ' + user);
 
     if (Image_Id.src.match("./image/sad-emoticon.jpg")) {
 
@@ -16,6 +16,10 @@ function imagefun() {
 imagefun()
 
 /***  2nd task**/
+// let myAudio = new Audio("./audio/02611mp3");
+// myAudio.load();
+// myAudio.play();
+
 let sek = 59
 let min = 59
 let hour = 23
@@ -36,7 +40,7 @@ function timer()
     clock.innerHTML = hour+":"+min+":"+sek }
 
 function start()
-    {if(!r){r = 1; counter()}}
+    {if( !r){r = 1; counter()}}
 
 function counter()
     {if(sek + min + hour == 0) sek = 59, min = 59, hour = 23;
