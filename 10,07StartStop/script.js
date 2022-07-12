@@ -1,29 +1,53 @@
-/*** solved 2nd task**/
-let s = 59
-let m = 59
-let h = 23
+/*** 1st task ****/
+function imagefun() {
+    let Image_Id = document.getElementById('getImage');
+    let user = (prompt('Как тебя зовут?'));
+    alert('Привет,' + user);
+
+    if (Image_Id.src.match("./image/sad-emoticon.jpg")) {
+
+
+        Image_Id.src = "./image/lucky.jpg";
+    }
+    else {
+        Image_Id.src = "./image/sad-emoticon.jpg";
+    }
+}
+imagefun()
+
+/***  2nd task**/
+let sek = 59
+let min = 59
+let hour = 23
 let r = 0; let tt = 0;
 
 function timer()
-    {s -= 1;
-    if(s < 0) s = 59, m -= 1;
-    if(m < 0) m = 59, h -= 1;
-    if(h < 0) h = 23
-    if(s + m + h == 0)stop()
-    s = s+"";
-    m = m+"";
-    h = h+"";
-    if (s.length < 2) s = "0"+s;
-    if (m.length < 2) m = "0"+m;
-    if (h.length < 2) h = "0"+h;
-    time.innerHTML = h+":"+m+":"+s }
+    {sek -= 1;
+    if(sek < 0) sek = 59, min -= 1;
+    if(min < 0) min = 59, hour -= 1;
+    if(hour < 0) hour = 23
+    if(sek + min + hour == 0)stop()
+    sek = sek+"";
+    min = min+"";
+    hour = hour+"";
+    if (sek.length < 2) sek = "0"+sek;
+    if (min.length < 2) min = "0"+min;
+    if (hour.length < 2) hour = "0"+hour;
+    clock.innerHTML = hour+":"+min+":"+sek }
 
 function start()
-{if(!r){r = 1;T2()}}
+    {if(!r){r = 1; counter()}}
 
-function T2()
-{if(s + m + h == 0) s = 59, m = 59, h = 23;
-    tt = setInterval("timer()",1000)}
+function counter()
+    {if(sek + min + hour == 0) sek = 59, min = 59, hour = 23;
+    tt = setInterval("timer()",1000)
+    clock.className="danger"}
 
 function stop()
-{clearInterval(tt);r = 0}
+    {clearInterval(tt);r = 0
+    clock.className="stp"}
+
+
+
+
+

@@ -1,13 +1,35 @@
+.smile {
+    display: flex;
+    justify-content: center;
+}
+
+img#getImage {
+    width: 370px;
+    height: auto;
+    border: 4px solid #a1a1a1;
+}
+
+
 .timer {
+    margin: 30px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.time {
+.stp {
     font-weight: 700;
     font-size: 100px;
     background-color:blue;
     color:white;
+    border-radius: 18px;
+}
+
+.danger{
+    font-weight: 700;
+    font-size: 100px;
+    background-color:red;
+    color:white;
+    border-radius: 18px;
 }
 
 .start{
