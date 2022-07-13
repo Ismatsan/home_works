@@ -1,6 +1,6 @@
 /*** 1st task ****/
 function imagefun() {
-    let Image_Id = document.getElementById('getImage');
+    let image_Id = document.getElementById('getImage');
     let user = (prompt('Как тебя зовут?'));
     alert('Привет, ' + user);
 
@@ -8,12 +8,11 @@ function imagefun() {
 
 
         Image_Id.src = "./image/lucky.jpg";
-    }
-    else {
+    }    else {
         Image_Id.src = "./image/sad-emoticon.jpg";
     }
 }
-imagefun()
+//imagefun()
 
 /***  2nd task**/
 // let myAudio = new Audio("./audio/02611mp3");
