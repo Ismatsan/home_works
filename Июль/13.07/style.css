@@ -1,7 +1,16 @@
 
-
 .card {
+    width: 500px;
     padding: 1rem;
     border: 1px solid black;
     margin: 1rem;
+    background: lawngreen;
+    border-radius: 8px;
+}
+
+.btn_link {
+    width: 116px;
+    height: 36px;
+    border-radius: 6px;
+    background: aqua;
 }
