@@ -11,19 +11,16 @@ const phones = [{
 }];
 
 
-const container = document.getElementById('store');
+const showCard = document.getElementById('store');
 
 phones.forEach((result, i) => {
-    const card = document.createElement('div');
-    card.classList = 'card-body';
-
 
 const content = `
   <div class="card">
     <div class="card-header" id="heading-${i}">
       
         <button class="btn_link" onclick= "location= '${result.image_url}'">
-            Посмотреть
+            Купить
         </button>
      
     </div>
@@ -33,7 +30,7 @@ const content = `
 
         <h5>${result.number}</h5>
         <p>${result.name}</p>
-        
+        <img src="${result.image_url}" alt="">
         <p>${result.price}</p>
         
       </div>
@@ -41,5 +38,5 @@ const content = `
   </div>
   `;
 
-    container.innerHTML += content;// Append newyly created card element to the container
+    showCard.innerHTML += content;// Append newyly created card element to the container
 })

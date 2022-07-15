@@ -1,10 +1,12 @@
-
+.body {
+    width: 800px;
+}
 .card {
-    width: 500px;
+    width: auto;
     padding: 1rem;
     border: 1px solid black;
     margin: 1rem;
-    background: lawngreen;
+    background: skyblue;
     border-radius: 8px;
 }
 
@@ -14,3 +16,4 @@
     border-radius: 6px;
     background: aqua;
 }
+
