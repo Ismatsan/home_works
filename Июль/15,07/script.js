@@ -260,9 +260,12 @@ const showDossier = (clients) => {
         const clientCompany = document.createElement('h4');
         clientCompany.innerText = 'Company: ' + item.company.name;
 
+        const clientButton = document.createElement('button');
+        clientButton.innerText = 'SHOW MORE'
 
 
-        cardBox.append(clientName, clientUsername, clientEmail, clientAddress, clientAddressStreet, clientAddressCity, clientPhone, clientCompany);
+
+        cardBox.append(clientName, clientUsername, clientEmail, clientAddress, clientAddressStreet, clientAddressCity, clientPhone, clientCompany, clientButton);
 
         document.querySelector('#root').append(cardBox);
     })

@@ -17,10 +17,12 @@
 }
 
 .card button{
+    align-items: center;
     padding: 7px 10px;
-    width: 100%;
+    width: 60%;
     background-color: darkblue;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
+    border-radius: 8px;
     border: 0;
 }
