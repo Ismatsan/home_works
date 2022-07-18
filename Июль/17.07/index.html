@@ -13,24 +13,24 @@
             <h2>Анкета для корпоративных клиентов</h2>
             <h4>Личные данные</h4>
         <form>
-            <input type="text" placeholder="Фамилия">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Отчество">
+            <input type="text" id="userSurname" placeholder="Фамилия">
+            <input type="text" id="userName" placeholder="Имя">
+            <input type="text" id="userPatronymic" placeholder="Отчество">
         </form>
         <h4>Паспортные данные</h4>
         <form>
-            <input type="data" placeholder="Дата рождения">
-            <input style="width:54%;" type="text" placeholder="Место проживания по прописке">
+            <input type="data" id="userBirthday" placeholder="Дата рождения">
+            <input style="width:54%;" id="userResidence" type="text" placeholder="Место проживания по прописке">
         </form><br>
         <form>
-            <input style="width:31%;" type="text" placeholder="Серийный номер AN/ID">
-            <input style="width:31%;" type="number" placeholder="ИНН">
-            <input type="date"; placeholder="Дата получения">
+            <input style="width:31%;" type="text" id="serialNumber" placeholder="Серийный номер AN/ID">
+            <input style="width:31%;" type="number" id="identificationNumber" placeholder="ИНН">
+            <input type="date" id="receivingDate" placeholder="Дата получения">
         </form><br>
         <form>
-            <input style="width:31%;" type="number" placeholder="Контактный номер">
-            <input style="width:31%;" type="text" placeholder="Электронный адресс">
-            <select>
+            <input style="width:31%;" type="number" id="contactNumber" placeholder="Контактный номер">
+            <input style="width:31%;" type="text" id="eMail" placeholder="Электронный адресс">
+            <select id="userBank">
                 <option value="">Выберите банк</option>
                 <option value="1">KICB</option>
                 <option value="2">Demir Bank</option>
@@ -39,10 +39,10 @@
             </select><br>
         </form><br>
         <form>
-            <input style="width:53%;" type="text" placeholder="Фактическое место проживания">
+            <input style="width:53%;" type="text" id="actualResidence" placeholder="Фактическое место проживания">
         </form>
-        <a href= 'form2.html'>
-            <button class="btn">Далее</button>
+        <a>
+            <button id="next" class="btn">Далее</button>
         </a>
     </div>
 
