@@ -55,6 +55,6 @@ form.addEventListener('submit', () =>{
 })
 
 
-document.getElementById('next').onclick = function() {
+document.getElementById('next').onclick = function(){
     window.location.href = 'form2.html';
 };
