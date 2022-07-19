@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
+    <div id="form" class="card">
             <h2>Анкета для корпоративных клиентов</h2>
             <h4>Личные данные</h4>
         <form>
@@ -29,7 +29,7 @@
         </form><br>
         <form>
             <input style="width:31%;" type="number" id="contactNumber" placeholder="Контактный номер">
-            <input style="width:31%;" type="text" id="eMail" placeholder="Электронный адресс">
+            <input style="width:31%;" type="email" id="eMail" placeholder="Электронный адресс">
             <select id="userBank">
                 <option value="">Выберите банк</option>
                 <option value="1">KICB</option>
@@ -42,7 +42,7 @@
             <input style="width:53%;" type="text" id="actualResidence" placeholder="Фактическое место проживания">
         </form>
         <a>
-            <button id="next" class="btn">Далее</button>
+            <button id="next" class="btn" type="submit">Далее</button>
         </a>
     </div>
 
