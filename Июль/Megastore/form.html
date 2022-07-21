@@ -5,45 +5,39 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>homeWork</title>
+    <title>form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="form" class="card">
+    <div id="fo" class="card">
+        <form id="form" action="javascript:void(0)" onsubmit="return false">
             <h2>Анкета для корпоративных клиентов</h2>
             <h4>Личные данные</h4>
-        <form>
-            <input type="text" id="userSurname" placeholder="Фамилия">
-            <input type="text" id="userName" placeholder="Имя">
-            <input type="text" id="userPatronymic" placeholder="Отчество">
-        </form>
-        <h4>Паспортные данные</h4>
-        <form>
-            <input type="data" id="userBirthday" placeholder="Дата рождения">
-            <input style="width:54%;" id="userResidence" type="text" placeholder="Место проживания по прописке">
-        </form><br>
-        <form>
-            <input style="width:31%;" type="text" id="serialNumber" placeholder="Серийный номер AN/ID">
-            <input style="width:31%;" type="number" id="identificationNumber" placeholder="ИНН">
-            <input type="date" id="receivingDate" placeholder="Дата получения">
-        </form><br>
-        <form>
-            <input style="width:31%;" type="number" id="contactNumber" placeholder="Контактный номер">
-            <input style="width:31%;" type="email" id="eMail" placeholder="Электронный адресс">
-            <select id="userBank">
+            <input type="text" id="userSurname" placeholder="Фамилия" onchange="check()">
+            <input type="text" id="userName" placeholder="Имя" onchange="check()">
+            <input type="text" id="userPatronymic" placeholder="Отчество" onchange="check()">
+            <h4>Паспортные данные</h4>
+            <input type="data" id="userBirthday" placeholder="Дата рождения" onchange="check()">
+            <input style="width:54%;" id="userResidence" type="text" placeholder="Место проживания по прописке" onchange="check()">
+            <br><br>
+            <input style="width:31%;" type="text" id="serialNumber" placeholder="Серийный номер AN/ID" onchange="check()">
+            <input style="width:31%;" type="number" id="personalNumber" placeholder="ИНН" onchange="check()">
+            <input type="date" id="receivingDate" placeholder="Дата получения" onchange="check()">
+            <br><br>
+            <input style="width:31%;" type="number" id="contactNumber" placeholder="Контактный номер" onchange="check()">
+            <input style="width:31%;" type="email" id="eMail" placeholder="Электронный адресс" onchange="check()">
+            <select id="userBank" onchange="check()">
                 <option value="">Выберите банк</option>
-                <option value="1">KICB</option>
-                <option value="2">Demir Bank</option>
-                <option value="3">RSK</option>
-                <option value="4">Optima</option>
+                <option value="KICB">KICB</option>
+                <option value="Demir_Bank">Demir Bank</option>
+                <option value="RSK">RSK</option>
+                <option value="Optima">Optima</option>
             </select><br>
-        </form><br>
-        <form>
-            <input style="width:53%;" type="text" id="actualResidence" placeholder="Фактическое место проживания">
+            <br>
+            <input style="width:53%;" type="text" id="actualResidence" placeholder="Фактическое место проживания" onchange="check()">
+            <button id="next" class="btn" type="submit" onclick="send();">Далее</button>
         </form>
-            <button id="next" class="btn" type="submit">Далее</button>
     </div>
-
 <script src="script.js"></script>
 </body>
 </html>
