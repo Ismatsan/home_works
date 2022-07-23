@@ -8,12 +8,12 @@
 <body>
     <div id="fo" class="card">
         <h2>Данные о ваших доходах</h2>
-        <form id="form2" action="javascript:void(0)" onsubmit="return false">
-            <input style="width:45%;" type="text" id="companyName" placeholder="Наименование организации">
-            <input style="width:45%;" type="text" id="userPosition" placeholder="Должность">
+        <form id="form" action="javascript:void(0)">
+            <input style="width:45%;" type="text" id="companyName" required placeholder="Наименование организации">
+            <input style="width:45%;" type="text" id="userPosition" required placeholder="Должность">
             <br><br>
-            <input style="width:45%;" type="text" id="monthSalary" placeholder="Зароботная плата в месяц">
-            <input style="width:45%;" type="text" id="quarterSalary" placeholder="Зароботная плата за последние 3 месяца">
+            <input style="width:45%;" type="text" id="monthSalary" required placeholder="Зароботная плата в месяц">
+            <input style="width:45%;" type="text" id="quarterSalary" required placeholder="Зароботная плата за последние 3 месяца">
             <h4>Сведения о кредитах</h4>
             <input style="width:92%;" type="text" id="productName" placeholder="Покупка телефона (Наименование товара)"><br><br>
             <input style="width:29%;" type="text" id="goodsPrice" placeholder="Стоимость товара">
@@ -22,25 +22,24 @@
             <br><br>
             <select id="loanType">
                 <option value="">Вид кредита</option>
-                <option value="1">Потребительский</option>
-                <option value="2">Коммерческий</option>
-                <option value="3">Ипотека</option>
-                <option value="4">Лизинг</option>
+                <option value="Потребительский">Потребительский</option>
+                <option value="Коммерческий">Коммерческий</option>
+                <option value="Ипотека">Ипотека</option>
+                <option value="Лизинг">Лизинг</option>
             </select>
             <select id="loanTerm">
                 <option value="">Срок кредита (мес)</option>
-                <option value="1">6 мес</option>
-                <option value="2">12 мес</option>
-                <option value="3">36 мес</option>
-                <option value="4">72 мес</option>
+                <option value="6 мес">6 мес</option>
+                <option value="12 мес">12 мес</option>
+                <option value="36 мес">36 мес</option>
+                <option value="72 мес">72 мес</option>
             </select>
             <br><br>
             <input style="width:92%;" type="text" id="pick_upPoint" placeholder="Точка получения товара">
             <br><br>
-            <button id="next2" class="btn" type="submit" onclick="send2();">Отправить</button>
+            <button type="submit" class="btn" id="next2">Отправить</button>
         </form>
     </div>
-
 <script src="script2.js"></script>
 </body>
 </html>

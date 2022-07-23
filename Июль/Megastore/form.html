@@ -10,23 +10,23 @@
 </head>
 <body>
     <div id="fo" class="card">
-        <form id="form" action="javascript:void(0)" onsubmit="return false">
+        <form id="form" action="javascript:void(0)">
             <h2>Анкета для корпоративных клиентов</h2>
             <h4>Личные данные</h4>
-            <input type="text" id="userSurname" placeholder="Фамилия" onchange="check()">
-            <input type="text" id="userName" placeholder="Имя" onchange="check()">
-            <input type="text" id="userPatronymic" placeholder="Отчество" onchange="check()">
+            <input type="text" id="userSurname" required placeholder="Фамилия">
+            <input type="text" id="userName" required placeholder="Имя">
+            <input type="text" id="userPatronymic" required placeholder="Отчество">
             <h4>Паспортные данные</h4>
-            <input type="data" id="userBirthday" placeholder="Дата рождения" onchange="check()">
-            <input style="width:54%;" id="userResidence" type="text" placeholder="Место проживания по прописке" onchange="check()">
+            <input type="data" id="userBirthday" placeholder="Дата рождения">
+            <input type="text" id="userResidence" style="width:54%;" placeholder="Место проживания по прописке">
             <br><br>
-            <input style="width:31%;" type="text" id="serialNumber" placeholder="Серийный номер AN/ID" onchange="check()">
-            <input style="width:31%;" type="number" id="personalNumber" placeholder="ИНН" onchange="check()">
-            <input type="date" id="receivingDate" placeholder="Дата получения" onchange="check()">
+            <input type="text" id="serialNumber" style="width:31%;" placeholder="Серийный номер AN/ID">
+            <input type="number" id="personalNumber" style="width:31%;" placeholder="ИНН">
+            <input type="date" id="receivingDate" placeholder="Дата получения">
             <br><br>
-            <input style="width:31%;" type="number" id="contactNumber" placeholder="Контактный номер" onchange="check()">
-            <input style="width:31%;" type="email" id="eMail" placeholder="Электронный адресс" onchange="check()">
-            <select id="userBank" onchange="check()">
+            <input type="number" id="contactNumber" style="width:31%;" placeholder="Контактный номер">
+            <input type="email" id="eMail" style="width:31%;" placeholder="Электронный адресс">
+            <select id="userBank">
                 <option value="">Выберите банк</option>
                 <option value="KICB">KICB</option>
                 <option value="Demir_Bank">Demir Bank</option>
@@ -34,8 +34,8 @@
                 <option value="Optima">Optima</option>
             </select><br>
             <br>
-            <input style="width:53%;" type="text" id="actualResidence" placeholder="Фактическое место проживания" onchange="check()">
-            <button id="next" class="btn" type="submit" onclick="send();">Далее</button>
+            <input type="text" id="actualResidence" style="width:53%;" placeholder="Фактическое место проживания">
+            <button type="submit" id="next" class="btn">Далее</button>
         </form>
     </div>
 <script src="script.js"></script>
