@@ -52,10 +52,6 @@ form{
     line-height: 10px;
 }
 
-form2{
-    line-height: 10px;
-}
-
 .empty-field{
     border: 2px solid red;
 }
