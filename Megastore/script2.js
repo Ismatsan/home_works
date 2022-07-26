@@ -1,4 +1,4 @@
-const form = document.querySelector('#form');
+const form = document.querySelector('#form2');
 
 form.addEventListener('submit', () => {
     const elements1 = document.querySelectorAll('#form input, #form select, #form textarea');
