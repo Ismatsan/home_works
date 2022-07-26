@@ -29,7 +29,6 @@ form.addEventListener('submit', () =>{
 })
 
 surnameField.addEventListener('change', () =>{
-
     console.log(surnameField.value);
 })
 surnameField.addEventListener('focus', () => {
@@ -95,8 +94,8 @@ actualField.addEventListener('input', () =>{
     actualField.classList.add('box-shadow');
 })
 
-// window.location.href = 'form2.html';
 
+//window.location.href = 'form2.html';
 // localStorage.userSurname = userSurname.value;
 // localStorage.userName = userName.value;
 // localStorage.userPatronymic = userPatronymic.value;

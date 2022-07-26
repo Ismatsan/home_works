@@ -4,10 +4,8 @@ form.addEventListener('submit', () => {
     const elements1 = document.querySelectorAll('#form input, #form select, #form textarea');
 
     for(let i = 0; i < elements1.length; i++){
-        // console.log(elements1[i].value);
         if (elements1[i].hasAttribute('required')){
             if(elements1[i].value === '') {
-                // elements1[i].style.boxShadow = `"0 0 10px red";`
                 console.log('Поле пустое');
             }
         }
@@ -24,7 +22,7 @@ form.addEventListener('submit', () => {
         const loanTermElement = document.querySelector('#loanTerm')
         const pick_upPointElement = document.querySelector('#pick_upPoint')
 
-        const credit = {};
+        // const credit = {};
 
         localStorage.companyName = companyNameElement.value;
         localStorage.userPosition = userPositionElement.value;
