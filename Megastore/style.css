@@ -15,6 +15,12 @@ body{
     margin-block: 50px;
 }
 
+.box{
+    display: flex;
+    width: 640px;
+    height: 30px;
+}
+
 .card h2{
     padding: 10px 0 0 10px;
 }
@@ -92,6 +98,13 @@ form{
     transition: all .3s ease;
 }
 
-span{
+p{
+    padding: 20px;
+    position: absolute;
     color: red;
+    font-size: 14px;
+}
+
+.par{
+    visibility: collapse;
 }

@@ -13,11 +13,11 @@
         <form id="form" action="javascript:void(0)">
             <h2>Анкета для корпоративных клиентов</h2>
             <h4>Личные данные</h4>
-            <input type="text" id="userSurname" data-required placeholder="Фамилия *">
-            <span class="some-form__hint">Обязательно для заполнения</span>
-            <input type="text" id="userName" data-required placeholder="Имя *">
-            <span class="some-form__hint">Обязательно для заполнения</span>
-            <input type="text" id="userPatronymic" placeholder="Отчество">
+            <div class="box">
+                <input type="text" id="userSurname" class="p_teg" data-required placeholder="Фамилия *">
+                <input type="text" id="userName" class="p_teg" data-required placeholder="Имя *">
+                <input type="text" id="userPatronymic" class="p_teg" data-required placeholder="Отчество">
+            </div>
             <h4>Паспортные данные</h4>
             <input type="data" id="userBirthday" placeholder="Дата рождения">
             <input type="text" id="userResidence" style="width:54%;" placeholder="Место проживания по прописке">
@@ -26,8 +26,7 @@
             <input type="number" id="personalNumber" style="width:31%;" placeholder="ИНН">
             <input type="date" id="receivingDate" placeholder="Дата получения">
             <br><br>
-            <input type="tel" id="contactNumber" style="width:31%;" data-required placeholder="Контактный номер *">
-            <span class="some-form__hint">Обязательно для заполнения</span>
+            <input type="tel" id="contactNumber" style="width:31%;" placeholder="Контактный номер *">
             <input type="email" id="eMail" style="width:31%;" placeholder="Электронный адресс">
             <select id="userBank">
                 <option value="">Выберите банк</option>

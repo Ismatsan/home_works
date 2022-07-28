@@ -18,15 +18,26 @@ form.addEventListener('submit', () =>{
         if(elements[i].hasAttribute('data-required')){
             if (elements[i].value === '') {
                 elements[i].classList.add('empty-field');
-                alert("Необходимо заполнить выделенные поля");
+                let inform = document.createElement('p');
+                inform.innerText = 'Заполните поле';
+                elements[i].after(inform);
 
-            }else
-                elements[i].classList.remove('empty-field');
-
+                return
+            }
         }
+        elements[i].classList.remove('empty-field');
+        //удаляем тег р с помощю css
+        // document.p.classList.toggle('par');
 
     }
+//       находим параграф, который будем удалять
+//      let p_tegInput = document.querySelector("input.p_teg");
+//    let removableNode = document.querySelectorAll("input.p_teg p")[0];
+//    p_tegInput.removeChild(removableNode);
 })
+
+//
+
 
 surnameField.addEventListener('change', () =>{
     console.log(surnameField.value);
